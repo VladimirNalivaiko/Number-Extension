@@ -17,9 +17,13 @@ Number.prototype.divide = function(x){
 }
 
 Number.prototype.pow = function(x){ 
-    var result = this;
-    for(var i = 1; i < x; i++){
-        result = this * result;
-    }
-    return result;
+    return Math.pow(this, x);
 }
+
+var a = 10;
+
+console.log(a + " + 3 = " + a.add(3));
+console.log(a + " - 3 = " + a.subtract(3));
+console.log(a + " * 3 = " + a.multiply(3));
+console.log(a + " / 2 = " + a.divide(2));
+console.log(a + ".pow(3) = " + a.pow(3));
